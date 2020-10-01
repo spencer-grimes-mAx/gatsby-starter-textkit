@@ -1,0 +1,103 @@
+div.d_page {
+  z-index: 10 !important;
+  position: absolute;
+  left: 48px;
+  width:auto;
+  display: flex-flow-root;
+  background: white !important;
+  width: 100%;
+  height: 100% !important;
+}
+
+div.d_full {
+  left: 0px !important;
+}
+div.d_full .container {
+  margin-top:50px;
+}
+div.d_page .container pre {
+  max-width:90% !important;
+}
+code.language-graphql span{
+  font-family: inherit !important;
+}
+code.language-graphql {
+  font-family: "Roboto Mono", monospace;
+  color: inherit;
+  white-space: pre;
+  tab-size: 3;
+  hyphens: none;
+  line-height: 1.2em;
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 1.1em  !important;
+  overflow-wrap: normal;
+}
+.frame {
+  z-index:9999;
+  position: absolute;
+  display: flex-flow-root;
+  width: 400px;
+  bottom:50px;
+  left: 16px;
+}
+
+.row-container {
+  display: flex;
+  width: 96%;
+  height: 100%;
+}
+.second-row {
+  flex-grow: 1;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container img {
+  margin-right: 20px;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: auto;
+}
+
+div.d_page div.container {
+  padding-left: 18px;
+  font-size: 1.4rem;
+}
+div.d_page header {
+  margin-top: -3px;
+}
+div.d_page header div {
+  margin-left: 0px;
+  padding-left: 18px !important;
+}
+div.d_page p {
+  margin-top: 18px;
+  font-size: 1.6rem;
+}
+div.d_page h1 {
+  font-size: 2.3rem !important;
+}
+@media only screen and (max-width: 600px) {
+
+  div.d_page {
+    z-index: 5;
+    position: absolute;
+    left: 0px !important;
+    width:auto;
+    display: flex-flow-root;
+    background: white !important;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  h1 {
+    padding-left: 36px !important;
+  }
+
+}
+  

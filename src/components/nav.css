@@ -1,0 +1,166 @@
+/* Change colors without having to use API */
+:root {
+  --sidebar: hsl(202, 100%, 12%) !important;
+  --background--hover: hsl(229.3, 63.6%, 96%);
+  --background--active: hsl(229.3, 63.6%, 94%);
+  --background--secondary: hsl(0, 0%, 93%);
+  --primary: 	hsl(199, 100%, 20%) !important;
+  --primary--hover: hsl(199, 100%, 25%) !important;
+  --primary-text: hsl(0, 0%, 100%);
+  --sidebar: hsl(223, 56%, 14%);
+  --sidebar-icon: hsl(223, 56%, 100%);
+  --sidebar-hover: hsl(223, 56%, 25%);
+  --text: hsl(0, 0%, 17.6%);
+  --text--l1: hsl(0, 0%, 32.6%);
+  --text--l2: hsl(0, 0%, 47.6%);
+  --text--l3: hsl(0, 0%, 62.6%);
+}
+
+/* Change logo without using API */
+.c-navigation--logo {
+  height: 24px;
+  width: 24px;
+  background-image: url('../images/logo.svg') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.c-navigation--avatar {
+  width: 0px !important;
+  height: 0px !important;
+  padding: 11px !important; 
+  background-size: 16px 16px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-image: url('../images/userLight.png') !important;
+}
+
+.navLink {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 48px;
+  text-align: center;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: 0px;
+}
+
+.navFirst {
+  margin-top: 30px;
+}
+
+.navActive {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 48px;
+  text-align: center;
+  display: block;
+}
+
+/* Other Settings */
+.c-navigation {
+    z-index: 11;
+}
+
+.c-tooltip {
+  z-index: 20;
+}
+
+.local-navigation {
+  position:absolute;
+  z-index:20;
+  margin-top:40px;
+}
+
+/* Force width of icons */
+.fa-w-16, .fa-w-20  {
+  width: 24px !important;
+}
+
+/* Override chat status font */
+.c-chat-status-option-selected__header {
+  font-size: 1rem !important;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .c-top-bar {
+    z-index: 99 !important;
+  }
+
+  .c-right-sidebar {
+    z-index: 99 !important;
+  }
+
+  /* In this template, move selector further down */
+  .с-message-template-editable {
+    margin-top: 30px;
+  }
+
+  /* Set positioning on mobile without us having to make another menu */
+  .c-navigation {
+    position: absolute;
+    display: block;
+    align-items: right;
+    justify-content: space-between;
+    flex-direction: none;
+    width: 48px;
+    height: 52px !important;
+    background-color: transparent !important;
+    background-color: #f9f9f9;
+    padding: 0px;
+    padding-left: 16px;
+    padding-top: 6px;
+    z-index: 1 !important;
+  }
+  .c-navigation--top {
+    display:none;
+    margin: 0px;
+    margin-left: 16px;
+  }
+  .c-navigation--nav-item {
+    width: 48px;
+  }
+  .c-navigation--menu {
+    position: absolute;
+    top:-5px;
+    height: 46px;
+  }
+
+  .c-navigation--avatar {
+    width: 0px !important;
+    height: 0px !important;
+    padding: 11px !important; 
+    background-size: 18px 18px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-image: url('../images/userDark.png') !important;
+    opacity: 0.6;
+    margin-left: 5px;
+  }
+
+  /* Hide main nav */
+  .navLink {
+    display: none !important;
+  }
+
+  .navActive {
+    display: none !important;
+  }
+  
+  /* Customize some positioning */
+  .c-account-details__name {
+    top:-6px;
+    padding-left:15px;
+  }
+
+  .e-heading .e-heading--h1 {
+    margin-left: -10px !important;
+  }
+
+}
